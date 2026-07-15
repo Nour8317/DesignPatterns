@@ -5,7 +5,9 @@ namespace Singleton
     internal class CurrencyConverter
     {
         public IEnumerable<ExchangeRate>? ExchangeRates;
+        //public static CurrencyConverter? Instance = new(); eager initialization
         public static CurrencyConverter? Instance;
+        public static object _lock = new object();
         private CurrencyConverter()
         {
             Load();
@@ -22,9 +24,14 @@ namespace Singleton
         }
         public static CurrencyConverter GetInstance()
         {
-            if (Instance == null)
+            //lazy initialization
+            //lock for thread safety
+            lock (_lock)
             {
-                Instance = new CurrencyConverter();
+                if (Instance == null)
+                {
+                    Instance = new CurrencyConverter();
+                }
             }
             return Instance;
         }
