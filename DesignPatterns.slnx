@@ -1,3 +1,7 @@
 <Solution>
+  <Folder Name="/AdapterDesignPattern/">
+    <Project Path="AdapterPattern/AdapterPattern.csproj" Id="1401ba05-83a8-4447-9986-46e951311ba8" />
+    <Project Path="PayrollSystem/PayrollSystem.csproj" Id="15e29680-9f20-4192-bcb2-a2592fcb0e60" />
+  </Folder>
   <Project Path="Singleton/Singleton.csproj" />
 </Solution>
