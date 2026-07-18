@@ -4,4 +4,5 @@
     <Project Path="PayrollSystem/PayrollSystem.csproj" Id="15e29680-9f20-4192-bcb2-a2592fcb0e60" />
   </Folder>
   <Project Path="Singleton/Singleton.csproj" />
+  <Project Path="Strategy/Strategy.csproj" Id="56cb6822-20d4-4927-90a7-7a34e3dadf69" />
 </Solution>
